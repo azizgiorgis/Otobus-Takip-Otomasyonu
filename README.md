@@ -1,60 +1,53 @@
-🚌 Gelişmiş Otobüs Takip Simülasyonu
+# Proje Adı: Otobüs Takip Otomasyonu Simülasyonu
 
-Bu proje, React ve Tailwind CSS kullanılarak geliştirilmiş, toplu taşıma araçlarının gerçek zamanlı konumlarını, hızlarını ve tahmini varış zamanlarını (ETA) simüle eden bir uygulamadır. Harita katmanı için Leaflet ve React-Leaflet kütüphaneleri kullanılmıştır.
+## 🚀 Canlı Demo
+[Vercel Canlı Linki]
+🔗 **Live Demo:** https://otobus-takip-otomasyonu.vercel.app
 
-Uygulama, özellikle otobüslerin duraklara yaklaştıkça yavaşlaması, rastgele trafik gecikmeleri ve dinamik rota hesaplamaları gibi gerçek dünya senaryolarını taklit etmek üzere tasarlanmıştır.
+---
 
+## 💡 Proje Hakkında
+Bu proje, **otobüslerin gerçek zamanlı takibini** ve **filo yönetimini** simüle eden, React ve Leaflet tabanlı gelişmiş bir uygulamadır. Simülasyon, gerçekçi yol koşulları (frenleme, trafik) ve gerçek mesafelere (Haversine) dayalı hareket mantığı içerir.
 
-💻 Teknolojiler
+**Temel Özellikler:**
+- **Gerçekçi Simülasyon:** Otobüslerin km/s cinsinden hızları ve duraklara yaklaştıkça otomatik yavaşlaması.
+- **Dinamik Takip:** Konum, hız, anlık doluluk ve tahmini varış süresi (ETA) gibi bilgilerin anlık takibi.
+- **Yön Gösterimi:** Otobüs ikonlarının harita üzerinde hareket yönüne göre dönmesi.
+- **Kontrol Paneli:** Her otobüsün hızının kullanıcı tarafından anlık olarak ayarlanabilmesi.
+- **Duyarlı Tasarım (Responsive):** Tüm cihazlarda sorunsuz görüntüleme.
 
-React: Kullanıcı arayüzü (UI) ve simülasyon mantığı için.
+---
 
-Tailwind CSS: Hızlı ve modern arayüz tasarımı için.
+## 🛠 Kullanılan Teknolojiler
 
-Leaflet & React-Leaflet: Harita bileşenini oluşturmak ve otobüs/durak işaretçilerini yönetmek için.
+**Frontend:**
+- **React** (State yönetimi ve UI)
+- **JavaScript** (Simülasyon mantığı ve hesaplamalar)
+- **Tailwind CSS** (Hızlı ve modern arayüz tasarımı)
+- **Leaflet & React-Leaflet** (Harita görselleştirmesi)
 
-Vercel: Kolay ve hızlı deployment (yayına alma) platformu.
+**Backend / Veritabanı:**
+- (Bu proje, tüm simülasyon mantığını istemci tarafında yürüttüğü için harici bir Backend/Veritabanı kullanmamaktadır.)
 
-🚀 Başlangıç
+**Diğer Araçlar:**
+- **Vercel** (Deployment)
 
-Bu projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
+---
 
-Ön Koşullar
+## 💻 Yerelde Çalıştırma
+Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyin:
 
-Node.js (LTS sürümü önerilir)
-
-npm veya yarn
-
-Kurulum Adımları
-
-Projeyi klonlayın (Eğer klonlama yapıyorsanız):
-
-git clone [https://github.com/kullaniciadiniz/otobus-takip-simulasyonu.git](https://github.com/kullaniciadiniz/otobus-takip-simulasyonu.git)
-cd otobus-takip-simulasyonu
-
-
-Bağımlılıkları yükleyin:
-
+**1. Repoyu Klonla:**
+```bash
+git clone [https://github.com/KULLANICI_ADINIZ/otobus-takip-otomasyonu.git](https://github.com/KULLANICI_ADINIZ/otobus-takip-otomasyonu.git)
+cd otobus-takip-otomasyonu
+```
+**2. Bağımlılıkları Yükle:**
+```bash
 npm install
 
-
-Uygulamayı başlatın:
-
-npm start
-
-
-Uygulama genellikle http://localhost:3000 adresinde açılacaktır.
-
-✨ Özellikler
-
-Gerçek Zamanlı Konum: Otobüslerin harita üzerindeki konumlarının her 500ms'de bir güncellenmesi.
-
-Dinamik Hız Kontrolü: Kontrol panelinden her bir otobüsün maksimum seyir hızının ayarlanabilmesi.
-
-Trafik Simülasyonu: Rastgele yavaşlamalar ekleyerek trafik gecikmelerini taklit etme.
-
-Durak Yaklaşımı: Otobüslerin durağa 0.5 km'den daha yakınken otomatik olarak yavaşlaması ve durması.
-
-ETA Hesaplama: Kalan mesafeye ve anlık hıza göre tahmini varış süresi (ETA) hesaplama.
-
-Görsel Geri Bildirim: Otobüslerin doluluk oranına göre renkli etiketler (Yeşil, Sarı, Kırmızı) ile anlık kapasite durumu gösterme.
+```
+**3. Uygulamayı Başlat:**
+```bash
+npm run dev
+```
