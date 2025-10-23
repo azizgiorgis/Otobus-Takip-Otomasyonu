@@ -1,16 +1,60 @@
-# React + Vite
+🚌 Gelişmiş Otobüs Takip Simülasyonu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, React ve Tailwind CSS kullanılarak geliştirilmiş, toplu taşıma araçlarının gerçek zamanlı konumlarını, hızlarını ve tahmini varış zamanlarını (ETA) simüle eden bir uygulamadır. Harita katmanı için Leaflet ve React-Leaflet kütüphaneleri kullanılmıştır.
 
-Currently, two official plugins are available:
+Uygulama, özellikle otobüslerin duraklara yaklaştıkça yavaşlaması, rastgele trafik gecikmeleri ve dinamik rota hesaplamaları gibi gerçek dünya senaryolarını taklit etmek üzere tasarlanmıştır.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+💻 Teknolojiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React: Kullanıcı arayüzü (UI) ve simülasyon mantığı için.
 
-## Expanding the ESLint configuration
+Tailwind CSS: Hızlı ve modern arayüz tasarımı için.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Leaflet & React-Leaflet: Harita bileşenini oluşturmak ve otobüs/durak işaretçilerini yönetmek için.
+
+Vercel: Kolay ve hızlı deployment (yayına alma) platformu.
+
+🚀 Başlangıç
+
+Bu projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
+
+Ön Koşullar
+
+Node.js (LTS sürümü önerilir)
+
+npm veya yarn
+
+Kurulum Adımları
+
+Projeyi klonlayın (Eğer klonlama yapıyorsanız):
+
+git clone [https://github.com/kullaniciadiniz/otobus-takip-simulasyonu.git](https://github.com/kullaniciadiniz/otobus-takip-simulasyonu.git)
+cd otobus-takip-simulasyonu
+
+
+Bağımlılıkları yükleyin:
+
+npm install
+
+
+Uygulamayı başlatın:
+
+npm start
+
+
+Uygulama genellikle http://localhost:3000 adresinde açılacaktır.
+
+✨ Özellikler
+
+Gerçek Zamanlı Konum: Otobüslerin harita üzerindeki konumlarının her 500ms'de bir güncellenmesi.
+
+Dinamik Hız Kontrolü: Kontrol panelinden her bir otobüsün maksimum seyir hızının ayarlanabilmesi.
+
+Trafik Simülasyonu: Rastgele yavaşlamalar ekleyerek trafik gecikmelerini taklit etme.
+
+Durak Yaklaşımı: Otobüslerin durağa 0.5 km'den daha yakınken otomatik olarak yavaşlaması ve durması.
+
+ETA Hesaplama: Kalan mesafeye ve anlık hıza göre tahmini varış süresi (ETA) hesaplama.
+
+Görsel Geri Bildirim: Otobüslerin doluluk oranına göre renkli etiketler (Yeşil, Sarı, Kırmızı) ile anlık kapasite durumu gösterme.
